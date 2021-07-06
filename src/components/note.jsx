@@ -1,15 +1,16 @@
 import React from 'react';
 
-function Note() {
+function Note(props) {
   return (
-    <div className="card text-white bg-dark mb-3 border-lt" style={{ maxWidth : "18rem" }}>
+    <div className="col">
+    <div className="card text-white bg-dark border-lt">
       <div className="card-body">
-        <h5 className="card-title">Dark card title</h5>
+        <h5 className="card-title">{props.title}</h5>
         <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {props.content}
         </p>
       </div>
+    </div>
     </div>
   );
 }
