@@ -37,7 +37,7 @@ function Input(props) {
                 type="text"
                 className="form-control"
                 value={todo.title}
-                style={{display: isClicked === true ? '' : 'none'}}
+                style={{display: isClicked ? '' : 'none'}}
               />
             </div>
             <div className="px-3">
@@ -47,7 +47,7 @@ function Input(props) {
                 className="form-control"
                 name="content"
                 placeholder="Enter Text"
-                rows={isClicked === true ? '3' : '1'}
+                rows={isClicked ? '3' : '1'}
                 value={todo.content}
               ></textarea>
             </div>
@@ -61,7 +61,7 @@ function Input(props) {
                   });
                 }}
                 className="btn btn-main"
-                style={{display: isClicked === true ? '' : 'none'}}
+                style={{display: isClicked ? '' : 'none'}}
               >
                 Enter
               </button>
