@@ -14,6 +14,6 @@ You will also see any lint errors in the console.
 
 ### `Demo`
 
-You can find a work demo here : https://5ryek.csb.app/
+You can find a work demo here : https://codesandbox.io/s/recursing-cannon-gw7tz
 
 
